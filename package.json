@@ -1,0 +1,22 @@
+{
+  "name": "autoload-min",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --import=ts-node --test index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.8.0",
+    "@types/node": "^20.11.26",
+    "fastify": "^4.26.2",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.1"
+  }
+}

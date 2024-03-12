@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --import=ts-node --test index.ts"
+    "test": "node --import=ts-node --test index.ts",
+    "test:tsx": "node --import=tsx --test index.ts"
   },
   "keywords": [],
   "author": "",

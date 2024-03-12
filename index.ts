@@ -1,3 +1,4 @@
+process.env.FASTIFY_AUTOLOAD_TYPESCRIPT = 'true'
 import fastify from 'fastify'
 import AutoLoad from '@fastify/autoload'
 import { dirname, resolve } from 'path'
@@ -8,7 +9,7 @@ import * as assert from 'node:assert'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const app = fastify()
 
-app.register(AutoLoad, { dir: resolve(__dirname, 'route') })
+await app.register(AutoLoad, { dir: resolve(__dirname, 'load') })
 
 app.ready((err): void => {
   test(() => {

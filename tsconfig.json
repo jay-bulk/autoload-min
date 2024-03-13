@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "target": "es2022",
+    "module": "nodenext",
+    "declaration": true,
+    "declarationMap": true,
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "lib": [
+      "ES2022"
+    ]
+  },
+  "include": [
+    "src"
+  ],
+  "compileOnSave": false
+}
+
